@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            padding: 100px 40px 0px 40px;
+            height: 100vh;
+            width: 100%;
+            /* min-width: 300px; */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            /* // 透明度 0.8 的半透明遮罩 */
+            background-color: rgba(36, 86, 90, 0.6);
+            /* // 設置背景混和模式為相乘模式 */
+            background-blend-mode: multiply;
+            background-image: url(./img/madhuvan-yadav-M-Tlne2HXmc-unsplash.jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+
+        }
+
+        .textColor{
+            color: rgb(218, 232, 233);
+        }
+
+        .show {
+            display: block;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            font-weight: 700;
+            background-color: rgba(255, 237, 209, 0.432);
+            border-radius: 20px; 
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            padding: 8px 16px;
+            font-weight: 700;
+            background-color: rgba(255, 237, 209, 0.74);
+        }
+
+        .mt15 {
+            margin-top: 15px;
+        }
+
+        .mt30 {
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        span{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="textColor">易經占卦(入門版)</h1>
+        <hr style="width: 100%; margin:30px 0px 20px 0px;background-color: rgba(255, 237, 209, 0.432);">
+        <h3 id="title1"
+        class="mt15 textColor" style="font-size: 16px; font-weight:500; line-height:25px;">
+            專心在想要尋找答案的問題上。<br>
+            心中默念三次後即可開始占卦。<br>
+        </h3>
+
+        <h4 id="title2" class="mt15 textColor">注意事項:</h4>
+        <span id="title3" class="mt15 textColor">
+            1.一次只詢問一個問題。<br>
+            2.一樣的問題不重複問。<br>
+            3.最長六個月內的問題。
+        </span>
+        <button id="start" class="mt30 btn">靜心默念問題三次，開始占卦</button>
+        
+        <h3 id="answer1" class="textColor"></h3>
+        <p id="answer2" class="mt15 textColor"></p>
+        <button id="restart" class="none btn mt15">重新占卦</button>
+
+
+    </div>
+
+
+
+    <script src="./js/predict_final.js"></script>
+</body>
+
+</html>
