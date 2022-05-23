@@ -100,13 +100,13 @@ start.addEventListener('click', function () {
     console.log(rValue);
     answer1.innerHTML = `<h2> ${rValue.name} </h2>`;
     answer2.innerHTML =
-        `<p> <b>整體</b> :   ${rValue.text} </p> \ 
+        `<p> <span class="titlebg">整體</span></b> :   ${rValue.text} </p> \ 
     <br>
-        <p> <b>感情</b> :  ${rValue.text2} </p> \ 
+        <p> <span class="titlebg">感情</span> :  ${rValue.text2} </p> \ 
     <br>
-        <p> <b>事業</b> :  ${rValue.text3} </p> \
+        <p> <span class="titlebg">事業</span> :  ${rValue.text3} </p> \
     <br>
-        <p> <b>建議</b> :  ${rValue.text4} </p> \ `
+        <p> <span class="titlebg">建議</span> :  ${rValue.text4} </p> \ `
         ;
     restart.classList.remove('none');
     start.classList.add('none');
