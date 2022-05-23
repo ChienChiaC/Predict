@@ -98,7 +98,7 @@ start.addEventListener('click', function () {
 
     let rValue = answerlist[rand];
     console.log(rValue);
-    answer1.innerHTML = `<h3> ${rValue.name} </h3>`;
+    answer1.innerHTML = `<h2> ${rValue.name} </h2>`;
     answer2.innerHTML =
         `<p> <b>整體</b> :   ${rValue.text} </p> \ 
     <br>
